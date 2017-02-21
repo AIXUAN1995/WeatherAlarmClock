@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#0071bc"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+    <!-- 搜索栏-->
+    <LinearLayout
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:padding="5dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <EditText
+            android:id="@+id/et_city"
+            android:layout_gravity="center"
+            android:gravity="center_vertical"
+            android:background="@drawable/search_selector"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:hint="城市名称、名称首字母..."
+            android:textColorHint="#77ffffff"
+            android:textSize="18sp"
+            android:textColor="#ffffff"
+            android:alpha="0.5"/>
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/ll_city"
+                android:background="#ffffff"
+                android:layout_width="match_parent"
+                android:layout_height="40dp">
+                <TextView
+                    android:id="@+id/tv_city"
+                    android:text="北京"
+                    android:textSize="22sp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"/>
+
+            <ListView
+                android:id="@+id/lv_cities"
+                android:background="#ffffff"
+                android:dividerHeight="1dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/letter_index"
+            android:layout_gravity="right"
+            android:orientation="vertical"
+            android:layout_width="30dp"
+            android:layout_height="match_parent">
+        </LinearLayout>
+
+    </FrameLayout>
+
+</LinearLayout>
+
